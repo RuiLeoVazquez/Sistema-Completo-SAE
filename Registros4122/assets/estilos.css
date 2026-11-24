@@ -1,0 +1,8 @@
+body{background:#f3f6fb;color:#263247}.barra{background:#203b63}.hero{background:#e2ecfa;border-radius:14px}.hero h1{font-weight:700}.etiqueta{font-size:.78rem;letter-spacing:1px;color:#355c8a;font-weight:bold}.card{border:0;border-radius:12px;box-shadow:0 4px 14px #1d355710}.btn-principal{background:#315f9b;color:white}.btn-principal:hover{background:#244a7b;color:white}.table thead{white-space:nowrap}.form-control,.form-select{border-radius:8px}.dropdown-menu{box-shadow:0 5px 15px #0002;border:0}
+@media print{nav,.d-print-none,main>.mb-3{display:none!important}body{background:white}.card{box-shadow:none;border:0}main{max-width:100%}}
+
+.acceso { max-width: 34rem; }
+.panel-enlace { color: #203b63; text-decoration: none; font-weight: 600; border: 1px solid #dbe3ed; transition: all .18s ease; }
+.panel-enlace:hover, .panel-enlace:focus-visible { background: #e8f0fa; color: #152c4d; transform: translateY(-2px); box-shadow: 0 6px 16px #1d355718; }
+.perfil-card { transition: transform .18s ease, box-shadow .18s ease; }
+.perfil-card:hover { transform: translateY(-3px); box-shadow: 0 8px 20px #1d35571a !important; }

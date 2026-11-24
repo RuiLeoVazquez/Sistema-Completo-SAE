@@ -1,0 +1,48 @@
+SISTEMA ESCOLAR — INSTALACIÓN EN XAMPP
+
+1. Extrae la carpeta Registros4122 dentro de C:\xampp\htdocs.
+2. En el panel de XAMPP, inicia Apache y MySQL.
+3. Abre http://localhost/Registros4122/ para inicializar el sistema.
+   Con la configuración estándar, se crea sae_escolar automáticamente.
+   También puedes importar base_datos_sae.sql desde phpMyAdmin. Si ya tienes
+   la base, conserva tus datos y respalda antes de actualizar.
+4. Si ya existe un administrador, entra con su cuenta. Para crear el primero,
+   abre PowerShell en la carpeta Registros4122 y ejecuta este comando con
+   tu correo y una contraseña propia de al menos 10 caracteres:
+
+   & 'C:\xampp\php\php.exe' .\crear_admin_cli.php 'tu-correo@ejemplo.com' 'Escribe-Aqui-Tu-Clave'
+
+5. Entra a http://localhost/Registros4122/login.php con tu correo y contraseña.
+
+CONFIGURACIÓN Y USO
+
+Administrador
+- Da de alta alumnos y profesores desde Administración de cuentas. Cada alta
+  crea el perfil y su acceso con el mismo correo.
+- Comparte en privado la contraseña inicial que se muestra tras guardar.
+  El sistema usa el correo como identificador de acceso. La entrega de la
+  contraseña es manual.
+- Los perfiles que ya existen pueden recibir acceso desde el mismo panel.
+  Las cuentas anteriores vinculadas siguen admitiendo su usuario original.
+  Si una cuenta anterior quedó sin perfil, puedes vincularla allí usando
+  el mismo correo que tiene el perfil escolar.
+- Revisa las solicitudes de autorregistro y activa las que correspondan.
+- Administra catálogos, inscripciones, asignaciones y calificaciones.
+
+Profesor
+- Inicia sesión con la cuenta vinculada a su perfil.
+- Registra y modifica las notas de sus propias materias en captura individual
+  o masiva. Consulta sus reportes académicos y sus grupos asignados.
+- El administrador realiza las asignaciones de materias y grupos.
+
+Alumno
+- Usa «Registrar mi cuenta de alumno» para enviar una solicitud con matrícula,
+  correo y contraseña. El administrador activa el acceso después de revisarla.
+- Si la matrícula ya está en el sistema, el administrador puede vincular el
+  acceso al perfil existente desde Administración de cuentas.
+- Una vez activo, el alumno consulta su perfil, sus materias y las notas
+  de las cuatro unidades y el promedio.
+
+Si MySQL tiene una configuración diferente a la de XAMPP, ajusta DB_HOST,
+DB_USER, DB_PASS, DB_NAME o DB_PORT según corresponda. La demostración local
+(demo.html) funciona de manera independiente con sus propios datos.
